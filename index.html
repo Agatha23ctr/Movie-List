@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main">
+
+<h1><span class="head-span"> Movie</span> List</h1>
+
+<form id="form">
+
+    <div class="form-group">
+        <label for="movie">Movie Name</label>
+        <input type="text" id="movie" class="form-input">
+    </div>
+    <div class="form-group">
+        <label for="genre">Genre</label>
+        <input type="text" id="genre" class="form-input">
+    </div>
+    <div class="form-group">
+        <label for="year">Year Realesed</label>
+        <input type="number" id="year" class="form-input">
+    </div>
+</form>
+<button id="btn">Add Movie</button>
+
+<div class="form-group">
+    <label for="search"></label>
+    <input type="text" placeholder="Search by movie name..." id="search" class="search-input">
+</div>
+
+<table>
+    <thead>
+
+        <tr>
+            <th>Movie Name</th>
+            <th>Genre</th>
+            <th>Year Relesed</th>
+            <th>Delete</th>
+        </tr>
+       
+    </thead>
+    <tbody id="movieList"></tbody>
+</table>
+    </div>
+</body>
+</html>
